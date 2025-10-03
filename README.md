@@ -1,6 +1,5 @@
-# **3.2.4. Görev: İnsan göz bebeğine yansıyan ışık analiz/tespit edilmesi**
+# ** İnsan göz bebeğine yansıyan ışık analiz/tespit edilmesi**
 
-Bu proje, **CİNGÖZ Yarışması Etap-1** kapsamında **İnsan göz bebeğine yansıyan ışık analiz/tespit edilmesi** amacıyla geliştirilmiştir.  
 Proje, **Python** ve **OpenCV** kullanarak İnsan göz bebeğine yansıyan ışık tespit eden eden bir sistemdir.
 
 ---
@@ -28,7 +27,7 @@ Bu, test ortamında standartlaştırılmış bir çalışma ortamı sağlar.
 Docker imajını oluşturmak için aşağıdaki komutu çalıştırabilirsiniz:
 
 ```bash
-sudo docker build -f docker/Dockerfile -t kizilirmak_gorev-3.2.4 .
+sudo docker build -f docker/Dockerfile -t deepfake-photo-analysis .
 ```
 
 komut, mevcut Dockerfile kullanarak gerekli bağımlılıkları içeren bir Docker imajı oluşturacaktır.
@@ -41,7 +40,7 @@ Oluşturulan imajı bir Docker konteyneri içinde çalıştırmak için:
 sudo docker run --gpus all \
     -v /path/to/input/:/input \ # input olarak verilecek dosyanın yolu (Not: input olarak verilecek CSV dosyası ve görüntüler ile aynı dizinde bulunmalıdır.)
     -v /path/to/output:/output \ # output.csv dosyasının kaydedileceği local (HOST) dizin
-    kizilirmak_gorev-3.2.4
+    deepfake-photo-analysis
 ```
 
 Burada:
